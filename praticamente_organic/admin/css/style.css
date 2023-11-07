@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('../../img/carousel-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+} 
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  
+}
+
+.container {
+  border-radius: 5px; 
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 600px;
+  border: 1.5px solid #fff;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+} 
+
+h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 5px;
+  background-color: #48ce09;
+  border-radius: 5px;
+} 
+.form-group {
+  margin-bottom: 20px;
+}  
+
+input[type=email], input[type=password] {
+  padding: 10px;
+  padding-right: 0px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #c7c2c2;
+  font-weight: bold;
+}
+
+button[type=submit] {
+  background-color: #48ce09;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+}
